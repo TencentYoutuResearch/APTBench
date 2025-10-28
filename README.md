@@ -13,26 +13,26 @@ Install the requirements with pip: `pip install -r requirements.txt`.
 To run model evaluation, first add your model path `config/model2path.json`, then follow these steps for a running example:
 
 ### Run Benchmark
-#### Testing models using vLLM offline batch mode (all models included except the huge MoEs: DSv3(3.1)/GLM-4.5/Kimi-K2)
+#### 1. Testing models using vLLM offline batch mode (all models included except the huge MoEs: DSv3(3.1)/GLM-4.5/Kimi-K2)
 ```bash
 cd code
 bash test_all_vllm_local.sh
 ```
 
-#### Testing one single model using vLLM offline batch mode
+#### 2. Testing one single model using vLLM offline batch mode
 ```bash
 cd code
-bash test_tasks_vllm.sh
+bash test_tasks_vllm.sh [model_name]
 ```
 
-#### Testing tasks using HuggingFace inference
+#### 3. Testing tasks using HuggingFace inference
 ```bash
 cd code
 bash test_tasks_hf.sh [model_name]
 ```
 `model_name` here is the key in the `config/model2path.json`.
 
-#### Testing tasks using SGLang
+#### 4. Testing tasks using SGLang
 For **DSv3(3.1)/GLM-4.5/Kimi-K2**, we use SGLang to deploy API service.
 The SGLang API scripts is shown in `sglang_start_scripts` folder.
 Take `start_0.sh` as an example, `--model-path` is the local path of the model, `--served-model-name` corresponds to the names in `config/model2path.json`, `--dist-init-addr` is the ip of the node that run the script.
@@ -49,7 +49,7 @@ bash test_tasks_sglang_api.sh [model_name]
 ```
 `[model_name]` select from `{"DeepSeek-V3-Base", "DeepSeek-V3.1-Base", "GLM-4.5-Base", "Kimi-K2-Base"}`.
 
-#### Base LLMs evaluation results
+### Base LLMs evaluation results
 The evaluation of the open-sourced base LLMs are shown in the following figures.
 <table>
   <tr>
