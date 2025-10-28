@@ -70,4 +70,4 @@ The evaluation of the open-sourced base LLMs are shown in the following figures.
 This project is licensed under an open source license. See the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
-- Thanks to the [SWE-Smith](https://github.com/SWE-bench/SWE-smith) and [InfoDeepSeek](https://infodeepseek.github.io/) projects for part of the seed data.
+- Thanks to the [SWE-Smith](https://github.com/SWE-bench/SWE-smith), [InfoDeepSeek](https://infodeepseek.github.io/), [Agentless](https://github.com/OpenAutoCoder/Agentless), [DeepResearchBench](https://github.com/Ayanami0730/deep_research_bench) and [ResearchyQuestions](https://huggingface.co/datasets/corbyrosset/researchy_questions) projects for part of the seed data.
