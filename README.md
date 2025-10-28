@@ -51,16 +51,20 @@ bash test_tasks_sglang_api.sh [model_name]
 
 #### Base LLMs evaluation results
 The evaluation of the open-sourced base LLMs are shown in the following figures.
-<div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; align-items: flex-end; margin-top: 16px;">
-  <div style="text-align: center;">
+<table>
+  <tr>
+  <td align="center" valign="bottom">
     <img src="assets/APTBench-SWE.png" alt="APTBench-SWE" height="200">
-    <div style="margin-top: 6px; font-style: italic;">Figure 1: APTBench-SWE</div>
-  </div>
-  <div style="text-align: center;">
+  <br>
+  <em>Figure1: APTBench-SWE</em>
+  </td>
+  <td align="center" valign="bottom">
     <img src="assets/APTBench-DR.png" alt="APTBench-DR" height="200">
-    <div style="margin-top: 6px; font-style: italic;">Figure 2: APTBench-DR</div>
-  </div>
-</div>
+  <br>
+  <em>Figure2: APTBench-DR</em>
+  </td>
+  </tr>
+</table>
 
 ## 📄 License
 This project is licensed under an open source license. See the [LICENSE](LICENSE) file for details.
