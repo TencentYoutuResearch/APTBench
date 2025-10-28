@@ -3,18 +3,8 @@
 ## 🌟 Overview
 APTBench is a benchmark tailored specifically for base LLMs evaluation on agent-related capabilities. 
 It focuses on core agentic abilities, e.g., planning and action, and covers key agent scenarios: **software engineering** and **deep research**. 
-Compared to existing general-purpose benchmarks, APTBench offers a more predictive signal of a model’s downstream performance as an agent (Figure 1&2), while remaining significantly more lightweight and cost-effective than full-scale, end-to-end agent evaluations after post-training.
+Compared to existing general-purpose benchmarks, APTBench offers a more predictive signal of a model’s downstream performance as an agent, while remaining significantly more lightweight and cost-effective than full-scale, end-to-end agent evaluations after post-training.
 
-
-<div style="text-align: center;">
-  <img src="assets/general.png" alt="general" width="800">
-  <div style="margin-top: 8px; font-style: italic;">Figure 1: General Base Benchmarks w.r.t SWE-Bench Verified</div>
-</div>
-
-<div style="text-align: center; margin-top: 30px;">
-  <img src="assets/aptbench.png" alt="aptbench" width="800">
-  <div style="margin-top: 8px; font-style: italic;">Figure 2: APTBench w.r.t SWE-Bench Verified</div>
-</div>
 
 ## 🚀 Quick Start
 ### Setup
@@ -43,7 +33,7 @@ bash test_tasks_hf.sh [model_name]
 `model_name` here is the key in the `config/model2path.json`.
 
 #### Testing tasks using SGLang
-For DSv3(3.1)/GLM-4.5/Kimi-K2, we use SGLang to deploy API service.
+For **DSv3(3.1)/GLM-4.5/Kimi-K2**, we use SGLang to deploy API service.
 The SGLang API scripts is shown in `sglang_start_scripts` folder.
 Take `start_0.sh` as an example, `--model-path` is the local path of the model, `--served-model-name` corresponds to the names in `config/model2path.json`, `--dist-init-addr` is the ip of the node that run the script.
 On node 0/1, run corresponding scripts as
@@ -61,20 +51,16 @@ bash test_tasks_sglang_api.sh [model_name]
 
 #### Base LLMs evaluation results
 The evaluation of the open-sourced base LLMs are shown in the following figures.
-<table>
-  <tr>
-    <td align="center" valign="bottom">
-      <img src="assets/APTBench-SWE.png" alt="APTBench-SWE" height="200">
-      <br>
-      <em>Figure3: APTBench-SWE</em>
-    </td>
-    <td align="center" valign="bottom">
-      <img src="assets/APTBench-DR.png" alt="APTBench-DR" height="200">
-      <br>
-      <em>Figure4: APTBench-DR</em>
-    </td>
-  </tr>
-</table>
+<div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; align-items: flex-end; margin-top: 16px;">
+  <div style="text-align: center;">
+    <img src="assets/APTBench-SWE.png" alt="APTBench-SWE" height="200">
+    <div style="margin-top: 6px; font-style: italic;">Figure 1: APTBench-SWE</div>
+  </div>
+  <div style="text-align: center;">
+    <img src="assets/APTBench-DR.png" alt="APTBench-DR" height="200">
+    <div style="margin-top: 6px; font-style: italic;">Figure 2: APTBench-DR</div>
+  </div>
+</div>
 
 ## 📄 License
 This project is licensed under an open source license. See the [LICENSE](LICENSE) file for details.
