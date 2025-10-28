@@ -8,12 +8,12 @@ Compared to existing general-purpose benchmarks, APTBench offers a more predicti
 
 <div style="text-align: center;">
   <img src="assets/general.png" alt="general" width="800">
-  <p><em>Figure1: General Base Benchmarks w.r.t SWE-Bench Verified </em></p>
+  <em>Figure1: General Base Benchmarks w.r.t SWE-Bench Verified </em>
 </div>
 
 <div style="text-align: center; margin-top: 20px;">
   <img src="assets/aptbench.png" alt="aptbench" width="800">
-  <p><em>Figure2: APTBench w.r.t SWE-Bench Verified </em></p>
+  <em>Figure2: APTBench w.r.t SWE-Bench Verified </em>
 </div>
 
 ## 🚀 Quick Start
