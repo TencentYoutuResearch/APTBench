@@ -1,0 +1,32 @@
+Request: Write the next execution command given the execution plan and the previously executed commands.
+Execution plan: step1: Download and install Miniconda from the official website; step2: Create a new conda environment named ESAM with Python 3.8 and activate it; step3: Install PyTorch following official instructions; step4: Install mmcv, mmdet3d, and mmdet using mmdetection3d installation guide; step5: Install MinkowskiEngine by building from source; step6: Install SAM and FastSAM, then download their respective checkpoints and place them in the 'data' folder; step7: Download the backbone checkpoint from Mask3D and place it in 'work_dirs/tmp'; step8: Install pointops by running its setup script; step9: Clone the segmentator repository into the 'data' folder for mesh segmentation; step10: Install other dependencies listed in requirements.txt.
+Previous executed commands: conda create -n ESAM python=3.8
+The next command:
+```bash
+conda activate ESAM
+```
+
+
+Request: Write the next execution command given the execution plan and the previously executed commands.
+Execution plan: step1: Set up the environment using Anaconda and install required dependencies; step2: Download pretrained models and FID reference sets; step3: Generate training data for LD3 using the teacher solver for CIFAR-10; step4: Generate training data for LD3 using the teacher solver for Stable Diffusion; step5: Train LD3 on the generated CIFAR-10 training data; step6: Compute FID for Stable Diffusion using default timesteps; step7: Compute FID for Stable Diffusion using custom timesteps.
+Previous executed commands: conda env create -f requirements.yml;conda activate ld3;pip install -e ./src/clip/;pip install -e ./src/taming-transformers/;pip install omegaconf;pip install PyYAML
+The next command:
+```bash
+pip install requests
+```
+
+
+Request: Write the next execution command given the execution plan and the previously executed commands.
+Execution plan: step1: Set up the conda environment and install required dependencies; step2: Download the model for embedding Atari images; step3: Download the original JAT (tokenized) dataset for retrieval; step4: Download the REGENT dataset and convert parquet files to bin files; step5: Evaluate the Retrieve and Play (R&P) baseline for a specific task; step6: Evaluate the REGENT checkpoint for a specific task; step7: Pre-train REGENT on the REGENT dataset using multiple GPUs; step8: Finetune REGENT on an unseen task with a specified number of demonstrations.
+Previous executed commands: conda create -n regent python=3.10;conda activate regent;pip install -e .[dev];pip install mujoco==2.3.7;pip install pytorch_msssim autofaiss
+The next command:
+```bash
+pip install timm==0.6.11
+```
+
+
+Request: Write the next execution command given the execution plan and the previously executed commands.
+Execution plan: $EXE_PLAN$.
+Previous executed commands: $EXE_CMDS$
+The next command:
+```bash

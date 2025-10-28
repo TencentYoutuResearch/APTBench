@@ -1,0 +1,16 @@
+{
+    "Seed-OSS-36B-Base": "ByteDance-Seed/Seed-OSS-36B-Base",
+    "Qwen3-1.7B-Base": "Qwen/Qwen3-1.7B-Base",
+    "Qwen3-4B-Base": "Qwen/Qwen3-4B-Base",
+    "Qwen3-8B-Base": "Qwen/Qwen3-8B-Base",
+    "Qwen3-30B-A3B-Base": "Qwen/Qwen3-30B-A3B-Base",
+    "Llama-3.2-3B-Base": "meta-llama/Llama-3.2-3B",
+    "DeepSeek-V3-Base": "deepseek-ai/DeepSeek-V3-Base",
+    "DeepSeek-V3.1-Base": "deepseek-ai/DeepSeek-V3.1-Base",
+    "Gemma3-27B-Base": "google/gemma-3-27b-pt",
+    "GLM4.5-Air-Base": ".zai-org/GLM-4.5-Air-Base",
+    "GLM-4.5-Base": "zai-org/GLM-4.5-Base",
+    "Llama4-Scout-Base": "meta-llama/Llama-4-Scout-17B-16E",
+    "SmolLM3-3B-Base": "HuggingFaceTB/SmolLM3-3B-Base",
+    "Kimi-K2-Base": "moonshotai/Kimi-K2-Base"
+}
