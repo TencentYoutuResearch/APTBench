@@ -8,12 +8,12 @@ Compared to existing general-purpose benchmarks, APTBench offers a more predicti
 
 <div style="text-align: center;">
   <img src="assets/general.png" alt="general" width="800">
-  <em>Figure1: General Base Benchmarks w.r.t SWE-Bench Verified </em>
+  <div style="margin-top: 8px; font-style: italic;">Figure 1: General Base Benchmarks w.r.t SWE-Bench Verified</div>
 </div>
 
-<div style="text-align: center; margin-top: 20px;">
+<div style="text-align: center; margin-top: 30px;">
   <img src="assets/aptbench.png" alt="aptbench" width="800">
-  <em>Figure2: APTBench w.r.t SWE-Bench Verified </em>
+  <div style="margin-top: 8px; font-style: italic;">Figure 2: APTBench w.r.t SWE-Bench Verified</div>
 </div>
 
 ## 🚀 Quick Start
@@ -75,3 +75,9 @@ The evaluation of the open-sourced base LLMs are shown in the following figures.
     </td>
   </tr>
 </table>
+
+## 📄 License
+This project is licensed under an open source license. See the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+- Thanks to the [SWE-Smith](https://github.com/SWE-bench/SWE-smith) and [InfoDeepSeek](https://infodeepseek.github.io/) projects for part of the seed data.
