@@ -7,12 +7,12 @@ Compared to existing general-purpose benchmarks, APTBench offers a more predicti
 
 
 <div style="text-align: center;">
-  <img src="assets/general.png" alt="general" width="500">
+  <img src="assets/general.png" alt="general" width="800">
   <p><em>Figure1: General Base Benchmarks w.r.t SWE-Bench Verified </em></p>
 </div>
 
 <div style="text-align: center; margin-top: 20px;">
-  <img src="assets/aptbench.png" alt="aptbench" width="500">
+  <img src="assets/aptbench.png" alt="aptbench" width="800">
   <p><em>Figure2: APTBench w.r.t SWE-Bench Verified </em></p>
 </div>
 
@@ -29,10 +29,16 @@ cd code
 bash test_all_vllm_local.sh
 ```
 
+#### Testing one single model using vLLM offline batch mode
+```bash
+cd code
+bash test_tasks_vllm.sh
+```
+
 #### Testing tasks using HuggingFace inference
 ```bash
 cd code
-bash test_tasks_hf [model_name]
+bash test_tasks_hf.sh [model_name]
 ```
 `model_name` here is the key in the `config/model2path.json`.
 
