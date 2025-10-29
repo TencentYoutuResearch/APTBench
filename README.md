@@ -75,7 +75,7 @@ This project is licensed under an open source license. See the [LICENSE](LICENSE
 ## ✍️ Citation
 
 ```bibtex
-@misc{qin2025aptbenchbenchmarkingagenticpotential,
+@misc{qin2025aptbench,
       title={APTBench: Benchmarking Agentic Potential of Base LLMs During Pre-Training}, 
       author={Jiarui Qin and Yunjia Xi and Junjie Huang and Renting Rui and Di Yin and Weiwen Liu and Yong Yu and Weinan Zhang and Xing Sun},
       year={2025},
