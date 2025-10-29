@@ -71,3 +71,17 @@ This project is licensed under an open source license. See the [LICENSE](LICENSE
 
 ## 🙏 Acknowledgments
 - Thanks to the [SWE-Smith](https://github.com/SWE-bench/SWE-smith), [InfoDeepSeek](https://infodeepseek.github.io/), [Agentless](https://github.com/OpenAutoCoder/Agentless), [DeepResearchBench](https://github.com/Ayanami0730/deep_research_bench) and [ResearchyQuestions](https://huggingface.co/datasets/corbyrosset/researchy_questions) projects for part of the seed data.
+
+## ✍️ Citation
+
+```bibtex
+@misc{qin2025aptbenchbenchmarkingagenticpotential,
+      title={APTBench: Benchmarking Agentic Potential of Base LLMs During Pre-Training}, 
+      author={Jiarui Qin and Yunjia Xi and Junjie Huang and Renting Rui and Di Yin and Weiwen Liu and Yong Yu and Weinan Zhang and Xing Sun},
+      year={2025},
+      eprint={2510.24397},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2510.24397}, 
+}
+```
