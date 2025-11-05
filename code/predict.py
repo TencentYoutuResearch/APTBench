@@ -39,7 +39,7 @@ template_3shot_env_setup_error = load_prompt_template('prompts/env_setup_error_3
 template_3shot_issue_fix_fix_patch = load_prompt_template('prompts/issue_fix_fix_patch_3shot.txt')
 template_3shot_issue_fix_locate = load_prompt_template('prompts/issue_fix_locate_3shot.txt')
 template_3shot_issue_fix_plan = load_prompt_template('prompts/issue_fix_plan_3shot.txt')
-template_3shot_issue_fix_tool_call = load_prompt_template('prompts/issue_fix_tool_call_3shot.txt')
+template_3shot_issue_fix_action = load_prompt_template('prompts/issue_fix_action_3shot.txt')
 template_3shot_issue_fix_test_patch = load_prompt_template('prompts/issue_fix_test_patch_3shot.txt')
 
 # deepresearch: close-end
@@ -299,8 +299,8 @@ TASK_CONFIG = {
         "answer_key": "answer",
         "judge_logic": lambda pred, ans: pred == ans
     },
-    ('issue_fix', 'tool_call'): {
-        "template": template_3shot_issue_fix_tool_call,
+    ('issue_fix', 'action'): {
+        "template": template_3shot_issue_fix_action,
         "prompt_fields": {"$TRAJ$": "trajs"},
         "max_new_tokens": 10,
         "extraction_func": extract_answer_action,

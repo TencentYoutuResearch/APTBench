@@ -15,7 +15,7 @@ for model in "${models[@]}"; do
                 tasks=("plan_en" "plan_zh" "summ_ans_en" "summ_ans_zh" "openend_plan_en" "openend_citation_en" "openend_citation_zh" "openend_quality_en" "openend_quality_zh")
                 ;;
             "issue_fix")
-                tasks=("locate" "fix_patch" "plan" "tool_call" "test_patch")
+                tasks=("locate" "fix_patch" "plan" "action" "test_patch")
                 ;;
             *)
                 echo "未知的dataset: $dataset"
@@ -39,8 +39,8 @@ for dataset in "${datasets[@]}"; do
         "deepresearch")
             tasks=("plan_en" "plan_zh" "summ_ans_en" "summ_ans_zh" "openend_plan_en" "openend_citation_en" "openend_citation_zh" "openend_quality_en" "openend_quality_zh")
             ;;
-        "debug")
-            tasks=("locate" "fix_patch" "plan" "tool_call" "test_patch")
+        "issue_fix")
+            tasks=("locate" "fix_patch" "plan" "action" "test_patch")
             ;;
         *)
             echo "未知的dataset: $dataset"

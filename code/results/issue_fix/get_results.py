@@ -191,7 +191,7 @@ def main():
     tokenizer_path = '../../../assets/llama3_tokenizer'
     tokenizer = AutoTokenizer.from_pretrained(tokenizer_path, trust_remote_code=True)
     
-    if 'tool_call' in args.folder_path:
+    if 'action' in args.folder_path:
         mode = 'EM_with_ROUGE'
     else:
         mode = 'ACC'
