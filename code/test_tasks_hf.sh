@@ -15,7 +15,7 @@ for dataset in "${datasets[@]}"; do
             tasks=("plan_en" "plan_zh" "summ_ans_en" "summ_ans_zh" "openend_plan_en" "openend_citation_en" "openend_citation_zh" "openend_quality_en" "openend_quality_zh")
             ;;
         "issue_fix")
-            tasks=("locate" "fix_patch" "plan" "tool_call" "test_patch")
+            tasks=("locate" "fix_patch" "plan" "action" "test_patch")
             ;;
         "tool")
             tasks=("acebench_api_select" "acebench_api_param" "bfcl_v4_api_select" "bfcl_v4_api_param")
@@ -45,7 +45,7 @@ for dataset in "${datasets[@]}"; do
             tasks=("plan_en" "plan_zh" "summ_ans_en" "summ_ans_zh" "openend_plan_en" "openend_citation_en" "openend_citation_zh" "openend_quality_en" "openend_quality_zh")
             ;;
         "issue_fix")
-            tasks=("locate" "fix_patch" "plan" "tool_call" "test_patch")
+            tasks=("locate" "fix_patch" "plan" "action" "test_patch")
             ;;
         "tool")
             tasks=("acebench_api_select" "acebench_api_param" "bfcl_v4_api_select" "bfcl_v4_api_param")
